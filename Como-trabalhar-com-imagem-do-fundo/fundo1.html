@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como colocar imagem do fundo no site</title>
+    <style>
+        div.quadrado{
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            margin-top: 10px;
+        }
+        
+        div#q1{
+            background-color: skyblue;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, red)
+        }
+
+        div#q3{
+            background-image: url("imagem/pattern003.png");
+        }
+
+        body{
+            background-image: url("imagem/wallpaper005.jpg");
+        }
+
+        h1,p{
+        background-color: bisque;
+        padding: 10px 10px;
+        margin: 0px 0px;
+        max-width: 800px;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <h1>Como colocar imagem do fundo no site</h1>
+    <p>O fundo do site é a área que fica atrás do conteúdo principal e pode ser personalizada de diversas formas para melhorar a aparência e a experiência do usuário. Existem várias maneiras de configurar o fundo do site, incluindo o uso de cores sólidas, gradientes e imagens. A escolha do fundo pode influenciar a estética geral do site e a legibilidade do conteúdo, por isso é importante escolher um fundo que complemente o design e facilite a leitura.</p>
+    <p>Para configurar o fundo do site, você pode usar a propriedade CSS <code>background</code>. Esta propriedade permite definir a cor de fundo, a imagem de fundo, aposição da imagem, a repetição da imagem e outros aspectos relacionados ao fundo. Por exemplo, para definir uma cor de fundo sólida, você pode usar a seguinte sintaxe:</p>
+    <pre><code>background-color: lightblue;</code></pre>
+    <p>Se você quiser usar uma imagem como fundo, pode usar a seguinte sintaxe:</p>
+    <pre><code>background-image: url("caminho/para/sua/imagem.jpg");</code></pre>
+    <p>Além disso, você pode personalizar a posição da imagem de fundo usando a propriedade <code>background-position</code>, controlar a repetição da imagem com a propriedade <code>background-repeat</code> e ajustar o tamanho da imagem de fundo com a propriedade <code>background-size</code>.</p>
+    <p>É importante lembrar que a escolha do fundo do site deve ser feita com cuidado, levando em consideração o design geral e a legibilidade do conteúdo. Um fundo muito chamativo ou com cores conflitantes pode dificultar a leitura e distrair os usuários, enquanto um fundo simples e harmonioso pode melhorar a experiência do usuário e destacar o conteúdo principal.</p>
+
+    <div class="quadrado" id="q1">
+
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+
+</body>
+</html>
