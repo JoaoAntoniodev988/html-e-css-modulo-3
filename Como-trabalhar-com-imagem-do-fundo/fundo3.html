@@ -7,18 +7,40 @@
 </head>
 <style>
     body{
-        background-image: url("https://github.com/gustavoguanabara/html-css/blob/master/imagens/mascote.png?raw=true");
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: right top;
+        columns: 2;
     }
-
     h1,p{
         background-color: bisque;
-        padding: 10px 10px;
+        padding: 5px 5px;
         margin: 0px 0px;
-        max-width: 800px;
+        max-width: 600px;
     }
+
+    div.bloco{
+        background-image: url(imagem/wallpaper003.jpg);
+        height: 165px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        background-size: 100%;
+        margin: 10px;
+    }
+
+    div#q1{
+        background-position: top left;
+        }
+    
+    div#q2{
+        background-position: left center;
+        }
+
+    div#q3{
+        background-position: right bottom;
+        }
+
+
+    div#q4{
+        background-position: center;
+        }
 </style>
 
 <body>
@@ -32,5 +54,20 @@
     <p>Outra opção é usar porcentagens para posicionar a imagem de fundo. Por exemplo, para posicionar a imagem de fundo a 25% do topo e 75% da esquerda, você pode usar:</p>
     <pre><code>background-position: 25% 75%;</code></pre>
     <p>É importante lembrar que a posição da imagem de fundo pode ser afetada por outras propriedades, como <code>background-size</code> e <code>background-repeat</code>. Certifique-se de ajustar essas propriedades conforme necessário para obter o resultado desejado.</p>
+
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+
+    </div>
+    <div class="bloco" id="q3">
+
+    </div>
+
+    <div class="bloco" id="q4">
+
+    </div>
+
 </body>
 </html>
