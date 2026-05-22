@@ -7,19 +7,33 @@
 </head>
 <style>
     #container {
-        height: 500px;
+        background-image: url(imagem/target001.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative; /* O posicionamento relativo. */
+        height: 400px;
+        width: 400px;
         padding: 10px;
         background-color: purple;
     }
     #conteudo {
+        background-image: url(imagem/target001.png);
+        position: absolute;/* O posicionamento absoluto. */
         background-color: yellow;
-        width: 400px;
+        background-size: 100% 100%;
+        width: 200px;
         height: 200px;
+
+        top: 50%; /* Posiciona o elemento a 50% do topo do container. */
+        left: 50%; /* Posiciona o elemento a 50% da esquerda do container. */
+        transform: translate(-50%, -50%); /* Move o elemento para cima e para a esquerda em 50% do seu próprio tamanho, centralizando-o dentro do container. */
     }
 </style>
 <body>
     <h1>Alinhamento vertical</h1>
-    <p>Esta é uma página de exemplo para demonstrar o alinhamento vertical de elementos.</p>
+    <p>Esta é uma página de exemplo para demonstrar o alinhamento vertical de elementos. Para o alinhamento vertical, é necessário que utilizemos as propridade de posicionamento realivo (position: relative) para o container e o posionamento aboluto (position: absolute) para o conteúdo. Quando utizamos a propriedade position: absolute, podemos controlar a posição do elemento dentro do container posicionado de forma relativa com as propriedades top, left, bottom e right e a propriedade transform: translate() que permite mover o elemento de forma mais flexível.</p> 
+
+    <p></p>
     <section id="container">
         <article id="conteudo">
 
