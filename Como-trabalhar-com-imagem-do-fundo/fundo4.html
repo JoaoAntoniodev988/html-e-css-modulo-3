@@ -7,11 +7,16 @@
 </head>
 <style>
     body {
-        height: 100vh;
+        /*height: 100vh;
         background-color: black;
         background-image: url(imagem/wallpaper002.jpg);
         background-position: center top;
         background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;*/
+
+        /* A propriedade shorthand para definir todas as propriedades de fundo em uma única declaração. */
+        background: black url(imagem/wallpaper002.jpg) center top no-repeat fixed;
         background-size: cover;
     }
 
@@ -36,6 +41,9 @@
         <p><strong>3. Tamanho específico:</strong> Você também pode definir um tamanho específico para a imagem de fundo usando unidades como pixels, porcentagens ou outras unidades de medida. Por exemplo, para definir a largura da imagem de fundo para 200 pixels e a altura para 100 pixels, você pode usar:</p>
         <pre><code>background-size: 200px 100px;</code></pre>
         <p>É importante lembrar que o uso da propriedade <code>background-size</code> pode afetar a aparência da imagem de fundo, especialmente se a imagem for redimensionada de forma significativa. Certifique-se de escolher um tamanho que mantenha a qualidade da imagem e se encaixe bem no design do seu site.</p>
+        <p>Também vale lembrar sobre duas propriedades relacionadas: <code>background-attachment</code> e <code>background-shorthand</code>.</p>
+        <p>Ambas podem ser úteis para controlar o comportamento da imagem de fundo em diferentes situações. Como por exemplo, a propriedade <code>background-attachment</code> permite controlar se a imagem de fundo se move com o conteúdo ou permanece fixa. Já a propriedade <code>background-shorthand</code> permite definir todas as propriedades de fundo em uma única declaração. Mais seguindo uma ordem de aplicação ou seja: <code>background: [color] [image] [position] [size] [repeat] [attachment]</code>.</p>
+        <p>Segundo a recomendação do W3C, é recomendável usar a propriedade shorthand para definir todas as propriedades de fundo em uma única declaração.</p>
     </main>
 
 
