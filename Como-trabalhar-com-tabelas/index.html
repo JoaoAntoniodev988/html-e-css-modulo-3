@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como trabalhar com tabelas</title>
 </head>
+<style>
+    table{
+        border-collapse: collapse; /* Colapsa as bordas da tabela */
+        width: 400px; /* Define a largura da tabela */
+    }
+
+    td{
+        border: 1px solid black; /* Adiciona uma borda de 1px sólida e preta às células */
+        padding: 8px; /* Adiciona um preenchimento de 8px dentro das células */
+    }
+
+    tr.linha{
+        background-color: lightgray; /* Define a cor de fundo da linha como cinza claro */
+    }
+
+    td.dado{
+        background-color: lightblue; /* Define a cor de fundo da célula como azul claro */
+    }
+</style>
 <body>
     <h1>Como trabalhar com tabelas</h1>
     <p>As tabelas são uma maneira eficaz de organizar e apresentar dados de forma clara e concisa. Para trabalhar com tabelas, siga estas etapas:</p>
@@ -22,7 +41,34 @@
         <li><code>&lt;th&gt;</code>: Define um cabeçalho da tabela.</li>
         <li><code>&lt;td&gt;</code>: Define uma célula da tabela.</li>
     </ul>
-    <p>Exemplo de uma tabela simples:</p>
-     
+    <p>Exemplo de uma tabela simples seguindo a hierarquia de tabela simples:</p>
+    <!-- Exemplo de hierarquia de tabela simples
+     primeiro temos:
+     table = tabela
+        table row = linha da tabela
+            table header = cabeçalho da tabela
+            table data = célula da tabela -->
+    <table>
+        <tr class="linha"> <!-- primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- segunda linha -->
+            <td class="dado">A2</td>
+            <td class="dado">B2</td>
+            <td class="dado">C2</td>
+        </tr>
+        <tr> <!-- terceira linha -->
+            <td class="dado">A3</td>
+            <td class="dado">B3</td>
+            <td class="dado">C3</td>
+        </tr>
+        <tr class="linha"> <!-- quarta linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table> 
 </body>
 </html>
