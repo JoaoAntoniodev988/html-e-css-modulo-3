@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como Trabalhar com tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            
+        }
+
+        thead, tfoot {
+            background-color: #8b8b8b;
+            color: white;
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Como Trabalhar com tabelas grandes</h1>
@@ -18,15 +41,74 @@
             tr, th, td -->
     <table>
         <thead>
-            tr
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
         </thead>
 
         <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>12.450.000</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>6.700.000</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td>8.000.000</td>
+            </tr>
+
+             <tr>
+                <td>Bahia</td>
+                <td>5.000.000</td>
+            </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>3.000.000</td>
+                </tr>
+
+             <tr>
+                <td>Paraná</td>
+                <td>4.000.000</td>
+            </tr>
+
+             <tr>
+                <td>Rio Grande do Sul</td>
+                <td>3.500.000</td>
+            </tr>
+
+             <tr>
+                <td>Pernambuco</td>
+                <td>3.000.000</td>
+            </tr>
+
+             <tr>
+                <td>Ceará</td>
+                <td>2.500.000</td>
+            </tr>
+
+             <tr>
+                <td>Pará</td>
+                <td>2.000.000</td>
+            </tr>
+
+             <tr>
+                <td>Amazonas</td>
+                <td>1.500.000</td>
+            </tr>
 
         </tbody>
-
-        <tfoot>
             
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td></td>
+            </tr>
         </tfoot>
     </table>
 </body>
