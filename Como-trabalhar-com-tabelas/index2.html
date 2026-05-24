@@ -9,9 +9,32 @@
             font-family: Arial, sans-serif;
         }
 
+        p{
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1em;
+            padding: 10px;
+            background-color: #8b8b8b;
+            color: white;
+        }
+
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #8b8b8b;
+            color: white;
         }
         
         th, td {
@@ -25,11 +48,18 @@
             color: white;
         }
 
+        tbody > tr:nth-child(even) {
+            background-color: #ececec;
 
+        }
+
+        td.num {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
-    <h1>Como Trabalhar com tabelas grandes</h1>
+    <h1 style="text-align: center;">Como Trabalhar com tabelas grandes</h1>
     <p>Trabalhar com tabelas grandes pode ser desafiador, mas existem algumas estratégias que podem ajudar a tornar a experiência mais eficiente e organizada. Aqui estão algumas dicas para lidar com tabelas grandes:</p>
     <!--Anatomia de tabelas grandes
     table
@@ -40,76 +70,91 @@
         tfoot
             tr, th, td -->
     <table>
+        <caption>População dos estados brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>12.450.000</td>
+                <td class="num">12.450.000</td>
             </tr>
 
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>6.700.000</td>
+                <td class="num">6.700.000</td>
             </tr>
 
             <tr>
                 <td>Minas Gerais</td>
-                <td>8.000.000</td>
+                <td class="num">8.000.000</td>
             </tr>
 
              <tr>
                 <td>Bahia</td>
-                <td>5.000.000</td>
+                <td class="num">5.000.000</td>
             </tr>
                 <tr>
                     <td>Santa Catarina</td>
-                    <td>3.000.000</td>
+                    <td class="num">3.000.000</td>
                 </tr>
 
              <tr>
                 <td>Paraná</td>
-                <td>4.000.000</td>
+                <td class="num">4.000.000</td>
             </tr>
 
              <tr>
                 <td>Rio Grande do Sul</td>
-                <td>3.500.000</td>
+                <td class="num">3.500.000</td>
             </tr>
 
              <tr>
                 <td>Pernambuco</td>
-                <td>3.000.000</td>
+                <td class="num">3.000.000</td>
             </tr>
 
              <tr>
                 <td>Ceará</td>
-                <td>2.500.000</td>
+                <td class="num">2.500.000</td>
             </tr>
 
              <tr>
                 <td>Pará</td>
-                <td>2.000.000</td>
+                <td class="num">2.000.000</td>
             </tr>
 
              <tr>
                 <td>Amazonas</td>
-                <td>1.500.000</td>
+                <td class="num">1.500.000</td>
             </tr>
 
+             <tr>
+                <td>Goiás</td>
+                <td class="num">1.000.000</td>
+            </tr>
         </tbody>
             
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td></td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>53.150.000</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores similique, quas reiciendis totam voluptatem nostrum, reprehenderit cum expedita nisi sint cupiditate tenetur assumenda cumque minus repellat mollitia porro natus?</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores similique, quas reiciendis totam voluptatem nostrum, reprehenderit cum expedita nisi sint cupiditate tenetur assumenda cumque minus repellat mollitia porro natus?</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores similique, quas reiciendis totam voluptatem nostrum, reprehenderit cum expedita nisi sint cupiditate tenetur assumenda cumque minus repellat mollitia porro natus?</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores similique, quas reiciendis totam voluptatem nostrum, reprehenderit cum expedita nisi sint cupiditate tenetur assumenda cumque minus repellat mollitia porro natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, libero sint expedita earum et dicta inventore minima possimus a quae quam ipsa magni ex, vero distinctio iusto perferendis. Repellendus, dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex consequuntur nemo praesentium possimus magni illo aperiam explicabo magnam illum sed, dicta veritatis voluptatem maiores! Hic quo quod minus dicta?</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores similique, quas reiciendis totam voluptatem nostrum, reprehenderit cum expedita nisi sint cupiditate tenetur assumenda cumque minus repellat mollitia porro natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, libero sint expedita earum et dicta inventore minima possimus a quae quam ipsa magni ex, vero distinctio iusto perferendis. Repellendus, dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex consequuntur nemo praesentium possimus magni illo aperiam explicabo magnam illum sed, dicta veritatis voluptatem maiores! Hic quo quod minus dicta?</p>
 </body>
 </html>
